@@ -1,0 +1,335 @@
+pt type='text/javascript' src='https://sadmin.brightcove.com/js/BrightcoveExperiences.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!-- Twitter SDK -->
+<script>var init_twitter = function(){if (typeof window.twttr === "undefined") {window.twttr = (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0],t = window.twttr || {};if (d.getElementById(id)) return;js = d.createElement(s);js.id = id;js.src = "http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);}; return t;}(document, "script", "twitter-wjs"));}};init_twitter();</script>
+<!-- Facebook JSDK -->
+<script src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.5"></script>
+
+<style>
+.clearfix{clear:both}#preview p,#story p{z-index:0;font-size:18px;line-height:27px;margin:18px 0;font-family:Georgia,Serif;color:#333}#preview figcaption,#story figcaption{font-family:Arial,serif;font-size:12px;line-height:17px;color:#999;padding:5px 5px 20px 5px}#preview figcaption span.credits:before,#story figcaption span.credits:before{content:'('}#preview figcaption span.credits:after,#story figcaption span.credits:after{content:')'}body#snap #preview:not(.arc_preview),body:not(#snap) #story{word-break:break-word}body#snap #preview:not(.arc_preview) #titleline,body#snap #preview:not(.arc_preview) .trb_bylines_nm_pb,body:not(#snap) #story #titleline,body:not(#snap) #story .trb_bylines_nm_pb{display:block;margin-top:3px;font:12px Arial,sans-serif;color:#999;text-decoration:none}body#snap #preview:not(.arc_preview) .responsive-embed,body:not(#snap) #story .responsive-embed{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}body#snap #preview:not(.arc_preview) .responsive-embed iframe,body#snap #preview:not(.arc_preview) .responsive-embed object,body#snap #preview:not(.arc_preview) .responsive-embed span,body#snap #preview:not(.arc_preview) .responsive-embed embed,body:not(#snap) #story .responsive-embed iframe,body:not(#snap) #story .responsive-embed object,body:not(#snap) #story .responsive-embed span,body:not(#snap) #story .responsive-embed embed{position:absolute;top:0;left:0;width:100%;height:100%}body#snap #preview:not(.arc_preview) .responsive-embed div.image-container,body:not(#snap) #story .responsive-embed div.image-container{overflow:hidden}body#snap #preview:not(.arc_preview) #content-elements,body:not(#snap) #story #content-elements{word-break:break-word}body#snap #preview:not(.arc_preview) #content-elements p,body#snap #preview:not(.arc_preview) #content-elements h3,body#snap #preview:not(.arc_preview) #content-elements ol,body#snap #preview:not(.arc_preview) #content-elements ul,body:not(#snap) #story #content-elements p,body:not(#snap) #story #content-elements h3,body:not(#snap) #story #content-elements ol,body:not(#snap) #story #content-elements ul{width:auto;z-index:0}body#snap #preview:not(.arc_preview) #content-elements p,body:not(#snap) #story #content-elements p{min-height:27px}body#snap #preview:not(.arc_preview) #content-elements h3,body:not(#snap) #story #content-elements h3{font-family:Georgia,'Droid Serif',Serif;font-weight:normal;font-size:27px;line-height:31px;margin-top:33px;clear:left}body#snap #preview:not(.arc_preview) #content-elements h3+figure,body:not(#snap) #story #content-elements h3+figure{margin-top:0}body#snap #preview:not(.arc_preview) #content-elements h3+p,body:not(#snap) #story #content-elements h3+p{margin-top:8px}body#snap #preview:not(.arc_preview) #content-elements blockquote .quote,body:not(#snap) #story #content-elements blockquote .quote{font-family:Georgia,"Droid Serif",serif;padding:19px 0 7px;margin-bottom:5px;color:#000;font-size:28px;line-height:35px;display:block;word-wrap:break-word;text-align:center;clear:both}body#snap #preview:not(.arc_preview) #content-elements blockquote .quote:before,body:not(#snap) #story #content-elements blockquote .quote:before{margin-bottom:10px;font-size:52px;display:block;line-height:4px;content:'\201C'}body#snap #preview:not(.arc_preview) #content-elements blockquote .cite,body:not(#snap) #story #content-elements blockquote .cite{font-family:'Arial', sans-serif;font-style:normal;font-size:14px;margin:0px auto;color:#666;text-align:center;clear:both}body#snap #preview:not(.arc_preview) #content-elements blockquote .cite:before,body:not(#snap) #story #content-elements blockquote .cite:before{content:"— "}body#snap #preview:not(.arc_preview) #content-elements figure,body:not(#snap) #story #content-elements figure{position:relative;z-index:1}body#snap #preview:not(.arc_preview) #content-elements figure.full,body:not(#snap) #story #content-elements figure.full{width:100%;float:none;clear:both}body#snap #preview:not(.arc_preview) #content-elements figure.medium,body:not(#snap) #story #content-elements figure.medium{width:48%}body#snap #preview:not(.arc_preview) #content-elements figure.small,body:not(#snap) #story #content-elements figure.small{width:30%}body#snap #preview:not(.arc_preview) #content-elements figure img,body:not(#snap) #story #content-elements figure img{width:100%;margin:0}body#snap #preview:not(.arc_preview) #content-elements hr,body:not(#snap) #story #content-elements hr{border-style:solid;clear:both;margin:30px 0}body#snap #preview:not(.arc_preview) #content-elements hr.none,body:not(#snap) #story #content-elements hr.none{border:0}body#snap #preview:not(.arc_preview) #content-elements hr.thin,body:not(#snap) #story #content-elements hr.thin{border-top:1px solid #333;border-bottom:none}body#snap #preview:not(.arc_preview) #content-elements hr.thick,body:not(#snap) #story #content-elements hr.thick{border-top:3px solid #333;border-bottom:none}body#snap #preview:not(.arc_preview) #content-elements hr.space,body:not(#snap) #story #content-elements hr.space{padding-top:20px;border-style:none}body#snap #preview:not(.arc_preview) #content-elements hr.fancy,body:not(#snap) #story #content-elements hr.fancy{background:url("http://d1qqc1e9kvmdh8.cloudfront.net/img/ngux-tophat/flourished-section-breaks/pretty.png") no-repeat scroll center center transparent;color:transparent;height:25px;margin:30px auto;width:auto;clear:both;border:0 none;display:block;padding:0px}body#snap #preview:not(.arc_preview) #content-elements hr.diamondy,body:not(#snap) #story #content-elements hr.diamondy{background:url("http://d1qqc1e9kvmdh8.cloudfront.net/img/ngux-tophat/flourished-section-breaks/diamondy.png") no-repeat scroll center center transparent;color:transparent;height:25px;margin:30px auto;width:auto;clear:both;border:0 none;display:block;padding:0px}body#snap #preview:not(.arc_preview) #content-elements .interstitial_link a,body:not(#snap) #story #content-elements .interstitial_link a{color:#4591B8;font-size:18px;font-weight:bold;line-height:27px}body#snap #preview:not(.arc_preview) #content-elements div:first-child p:first-child,body:not(#snap) #story #content-elements div:first-child p:first-child{clear:both}body#snap #preview:not(.arc_preview) #content-elements div:first-child p:first-child:first-letter,body:not(#snap) #story #content-elements div:first-child p:first-child:first-letter{float:left;font-size:100px;line-height:0.95em;font-family:"Belizio", Georgia, serif;margin-right:0.115em;color:#000;text-transform:uppercase;font-style:normal}body#snap #preview:not(.arc_preview) #content-elements p:not(.byline) a,body:not(#snap) #story #content-elements p:not(.byline) a{color:#4591B8}body#snap #preview:not(.arc_preview) #content-elements p:not(.byline) a:hover,body:not(#snap) #story #content-elements p:not(.byline) a:hover{color:#77B3CC}body#snap #preview:not(.arc_preview) #content-elements a,body:not(#snap) #story #content-elements a{text-decoration:none}body#snap #preview:not(.arc_preview) #content-elements header .trb_embed_related_credit_and_caption,body:not(#snap) #story #content-elements header .trb_embed_related_credit_and_caption{margin-top:5px}body#snap #preview:not(.arc_preview) #content-elements ul,body#snap #preview:not(.arc_preview) #content-elements ol,body:not(#snap) #story #content-elements ul,body:not(#snap) #story #content-elements ol{overflow:hidden;padding-left:20px}body#snap #preview:not(.arc_preview) #content-elements ul li,body#snap #preview:not(.arc_preview) #content-elements ol li,body:not(#snap) #story #content-elements ul li,body:not(#snap) #story #content-elements ol li{font-family:Georgia, serif;margin-left:5px;font-size:16px;line-height:26px}body#snap #preview:not(.arc_preview) #content-elements ul li,body:not(#snap) #story #content-elements ul li{list-style-type:disc}body#snap #preview:not(.arc_preview) #content-elements ul li:before,body:not(#snap) #story #content-elements ul li:before{content:''}body#snap #preview:not(.arc_preview) #content-elements ol li,body:not(#snap) #story #content-elements ol li{list-style-type:decimal}body#snap #preview:not(.arc_preview) #content-elements ul.related-links,body:not(#snap) #story #content-elements ul.related-links{margin-top:0}body#snap #preview:not(.arc_preview) #content-elements .left,body:not(#snap) #story #content-elements .left{float:left;margin:12px 2% 12px 0px}body#snap #preview:not(.arc_preview) #content-elements .right,body:not(#snap) #story #content-elements .right{float:right;margin:12px 0px 12px 2%}body#snap #preview:not(.arc_preview) #content-elements .twitter,body:not(#snap) #story #content-elements .twitter{width:auto}body#snap #preview:not(.arc_preview) #content-elements .EmbeddedTweet,body#snap #preview:not(.arc_preview) #content-elements twitter-tweet,body#snap #preview:not(.arc_preview) #content-elements .media-forward,body:not(#snap) #story #content-elements .EmbeddedTweet,body:not(#snap) #story #content-elements twitter-tweet,body:not(#snap) #story #content-elements .media-forward{max-width:500px !important;width:100% !important;margin:auto !important}body#snap #preview:not(.arc_preview) #content-elements .instagram,body:not(#snap) #story #content-elements .instagram{width:100%}body#snap #preview:not(.arc_preview) #content-elements .instagram-media,body:not(#snap) #story #content-elements .instagram-media{margin:auto !important}body#snap #preview:not(.arc_preview) #content-elements .storify,body:not(#snap) #story #content-elements .storify{width:100%}body#snap #preview:not(.arc_preview) #content-elements .soundcloud,body:not(#snap) #story #content-elements .soundcloud{width:100%}body#snap #preview:not(.arc_preview) #content-elements .vidme,body:not(#snap) #story #content-elements .vidme{width:100%}body#snap #preview:not(.arc_preview) #content-elements .scribble,body:not(#snap) #story #content-elements .scribble{width:100%}body#snap #preview:not(.arc_preview) #content-elements .facebook,body:not(#snap) #story #content-elements .facebook{width:320px;float:left;margin:12px 15px 12px 0px}body#snap #preview:not(.arc_preview) #content-elements .fb-post.fb_iframe_widget,body:not(#snap) #story #content-elements .fb-post.fb_iframe_widget{display:block !important;padding:0px}body#snap #preview:not(.arc_preview) #content-elements .fb-post.fb_iframe_widget>span,body:not(#snap) #story #content-elements .fb-post.fb_iframe_widget>span{display:block !important;margin:0 auto}body#snap #preview:not(.arc_preview) #content-elements .trb_allContentWrapper[data-content-type=htmlstory] .trb_mainContent_copyright,body:not(#snap) #story #content-elements .trb_allContentWrapper[data-content-type=htmlstory] .trb_mainContent_copyright{display:block;font-family:Arial,Sans-serif !important;color:#999;font-size:12px !important;clear:left;margin-bottom:30px}body .trb_mainContent ul li:before{content:''}body .trb_mainContent ol li:before{font-family:"Belizio",Georgia,serif;font-size:14px;margin:0 5px 0 0;left:0}@media (max-width: 767px){.heroic figcaption{display:none}#story #content-elements .right,#story #content-elements .left{float:none;margin:0 auto;width:100%}#story #content-elements figure.small,#story #content-elements figure.medium{width:100%}#story #content-elements hr{margin:20px 0}}
+/*# sourceMappingURL=lajollalight_story.min.css.map */
+
+</style>
+
+<div id="fb-root"></div>
+<div id="story">
+  <div id="content-elements">
+    <div><p>Last week, in Part 1 of our coverage of the coming June 5 primary election, we brought you the candidates for 52nd Congressional District. Here in Part 2, you&#8217;ll find the candidates for State Assembly in the 78th District and County Board of Supervisors in the 4th District.</p></div>
+<div><p>This election will determine which two candidates in each race earn the right to run in our district&#8217;s Nov. 6 general election. (California employs a top-two primary system, in which any candidate can run but only the top two winners, regardless of party affiliation, advance.)</p></div>
+<div><p><strong>CALIFORNIA STATE ASSEMBLY, 78th DISTRICT</strong><br>
+<br>
+Democratic incumbent Todd Gloria has only one challenger to his seat. Does Maggie Campbell stand a chance? Does she deserve your support?</p></div>
+<div><p><strong>INCUMBENT<br>
+Todd Gloria, Democrat</strong></p></div>
+<figure class="medium left">
+  <img src="http://www.trbimg.com/img-5aff2cbe/turbine/sd-1526672565-g78ukg9iin-snap-image" alt="Todd Gloria" title="Todd Gloria">
+  <figcaption>
+    Todd Gloria <span class="credits">COURTESY ROB ANDREW</span>
+  </figcaption>
+</figure>
+<div><p>In December 2016, Gloria was sworn in as the California State Assemblymember for the 78th District. A native San Diegan, Gloria began his public-service career working for the County&#8217;s Health and Human Services Agency. He went on to join the office of Congressmember <runtime:topic id="PEPLT001539">Susan Davis</runtime:topic>, ultimately serving as her district director.</p></div>
+<div><p>In 2008, Gloria was elected to City Council. For more than half of his tenure, Gloria led the development of the City&#8217;s budget as the Budget and Government Efficiency Committee chair. During his two full terms on the Council, Gloria was selected to serve as Council president for two terms and served as interim mayor from August 2013 to March 2014.</p></div>
+<div><p>In the Assembly, Gloria has continued his advocacy for increased infrastructure investment and pragmatic solutions to housing and homelessness. To date, he has been able to successfully author, pass and receive the governor&#8217;s signature on 13 pieces of legislation dealing with issues such as election reform, housing solutions, and cutting government red tape for small businesses.</p></div>
+<div><p>In his first year, Gloria was selected by the Assembly speaker to serve as the Assembly&#8217;s assistant majority whip. At the beginning of his second year, Gloria was elevated to majority whip, a leadership post he holds today.</p></div>
+<div><p>Gloria is a graduate of the University of San Diego and lives in Mission Hills.</p></div>
+<div><p><strong>Why are you running?</strong></p></div>
+<div><p>To help tackle issues that affect everyday San Diegans. From repairing our roads to combatting climate change to addressing California&#8217;s housing crisis, I have been part of the team to make this progress, but we still have more work to do. That&#8217;s why I want to return to Sacramento and continue to bring the priorities of the San Diego region to our state capitol and effectuate change that will move our state forward.</p></div>
+<div><p><strong>What are the three most important issues to you?</strong></p></div>
+<div><p>1) Housing.<br>
+2) Climate change/100 percent renewable energy.<br>
+3) Water.</p></div>
+<div><p><strong>What will you do to alleviate deadlock and change the way the political system currently works?</strong></p></div>
+<div><p>The California legislature is working and we are moving our state forward. We have taken the lead on important issues that affect everyday Californians in light of the current federal administration and gridlock in Washington DC &#8212; issues like infrastructure investment, health care and climate change. I&#8217;m proud to have been part of the team to make this progress and I believe it&#8217;s imperative we continue this forward momentum on more issues.</p></div>
+<div><p><strong>CHALLENGER:<br>
+Maggie Campbell, Republican</strong></p></div>
+<figure class="medium right">
+  <img src="http://www.trbimg.com/img-5aff2d8b/turbine/sd-1526672775-2fi922nwjc-snap-image" alt="Maggie Campbell" title="Maggie Campbell">
+  <figcaption>
+    Maggie Campbell <span class="credits">COURTESY</span>
+  </figcaption>
+</figure>
+<div><p>Campbell is a trauma-intervention counselor and U.S. Navy veteran who lives in Clairemont.</p></div>
+<div><p><strong>Why are you running?</strong></p></div>
+<div><p>I am not a career politician. I am a leader with provable skills and expertise that will allow me to continue to stand up and fight for what is right and to secure a better future for our families and small businesses.With 30 years of experience in business, banking and evangelical ministry, I have the background and experience to bring a strong, voice to the state capitol. The residents of the 78th Assembly District deserve leadership and balance in Sacramento; it&#8217;s time for a change.<br>
+<br>
+I&#8217;m ready to challenge our current representative who voted to increase our gas and vehicle taxes by up to $300 per year, for a total of $52 billion a year! I am prepared to go the distance to achieve this victory for the citizens of 78th Assembly district.<br>
+<br>
+<strong>What are the three most important issues to you?</strong><br>
+<br>
+1) To eliminate the gas tax.<br>
+2) To eliminate the vehicle tax.<br>
+3) To take steps to uplift and support small businesses &#8212; especially those struggling to stay open due to the new minimum-wage laws, such as restaurants and family businesses.<br>
+<br>
+<strong>What will you do to alleviate deadlock and change the way the political system currently works?</strong><br>
+<br>
+If there are any changes to the political system currently needed, research into the problem would be the first step. Subsequent steps would depend on the research findings.</p></div>
+<div><p><strong>BOARD OF SUPERVISORS, DISTRICT NO. 4</strong></p></div>
+<div><p>Now that term limits have kicked in, incumbent Republican Ron Roberts is out. So, for the first time since 1994, his seat is open. And it&#8217;s a hot one.</p></div>
+<div><p><strong>CHALLENGERS (listed in alphabetical order):<br>
+<runtime:topic id="PEGPF001999">Bonnie Dumanis</runtime:topic>, Republican</strong></p></div>
+<figure class="medium left">
+  <img src="http://www.trbimg.com/img-5aff2dea/turbine/sd-1526672870-mqw2hbxtf1-snap-image" alt="Bonnie Dumanis" title="Bonnie Dumanis">
+  <figcaption>
+    Bonnie Dumanis <span class="credits">COURTESY</span>
+  </figcaption>
+</figure>
+<div><p>Dumanis rose from a tough working class neighborhood south of Boston, to typist, to prosecutor, to judge, to district attorney. She&#8217;s worked hard to break barriers.For 25 years, her father was a truck driver and a proud member of the Teamsters. Her mother worked for the government&#8217;s <runtime:topic id="ORGOV000324">WIC</runtime:topic> (Women, Infants and Children) program, providing nutritional support to low-income families. She knows the struggles of working families because she&#8217;s a product of America&#8217;s working class.<br>
+<br>
+Dumanis put herself through college, and then law school, while working as a junior clerk typist in the district attorney&#8217;s office. During this time, she also volunteered with Legal Aid and the Women&#8217;s Legal Center, rising up the ranks to deputy district attorney.<br>
+<br>
+In 1994, Dumanis was elected judge on the San Diego Municipal Court and, in 1998, judge on the Superior Court, where she pioneered the &#8220;Domestic Violence Court&#8221; to reduce recurrences of abuse. She also created one of the first drug courts in the County, which was recognized as a national model.In 2003, Dumanis challenged the sitting DA, winning a race no one thought she could, while making history as the first openly gay prosecutor in the country, and the first female DA in San Diego history.<br>
+<br>
+As district attorney for nearly 15 years, Dumanis built a partnership with other law enforcement agencies and community groups to help make San Diego one of the safest big cities in America. When she left office in 2017, crime was at a 47-year low.<br>
+<br>
+Dumanis has lived in District 4 for more than 40 years, now residing in Little Italy with her wife, Denise, a licensed clinical social worker and expert in the issues of aging.</p></div>
+<div><p><strong>Why are you running?</strong><br>
+<br>
+After decades of fostering change as prosecutor, judge and district attorney, I still want to give back. I have lived in the 4th district for 40 years and know it well. It is urgent that we tackle critical issues like housing, mental health, and homelessness. I am so passionate about these problems, I will work without a salary.</p></div>
+<div><p><strong>What are the three most important issues to you?</strong><br>
+<br>
+1) Housing.<br>
+2) Homelessness.<br>
+3) Mental health.</p></div>
+<div><p><strong>What will you do to alleviate deadlock and change the way the political system currently works?</strong></p></div>
+<div><p>The same way I have always worked by bringing stakeholders together &#8212; listening and implementing a plan to accomplish change that in best for San Diegans.</p></div>
+<div><p><strong><runtime:topic id="PEPLT00008569">Nathan Fletcher</runtime:topic>, Democrat</strong></p></div>
+<figure class="medium right">
+  <img src="http://www.trbimg.com/img-5aff2e25/turbine/sd-1526672929-gt3ynls8ml-snap-image" alt="Nathan Fletcher" title="Nathan Fletcher">
+  <figcaption>
+    Nathan Fletcher <span class="credits">COURTESY</span>
+  </figcaption>
+</figure>
+<div><p>Fletcher served two terms in the State Assembly, where he authored Chelsea&#8217;s Law, landmark public safety legislation strengthening penalties for violent crimes against children. He passed college scholarship for middle-class children and fought to protect the rights of women, children and immigrants. Fletcher was also a leading advocate for the repeal of &#8220;Don&#8217;t Ask Don&#8217;t Tell,&#8221; allowing gays and lesbians to serve openly in the Armed Forces.<br>
+<br>
+Elected both times as a Republican, this issue put him at odds with his party. So he became an independent in 2012, during his first unsuccessful bid for San Diego mayor. He became a Democrat in 2013, during his second.<br>
+<br>
+Fletcher served in the <runtime:topic id="ORGOV0000126141143">U.S. Marine Corps</runtime:topic>, where he was decorated for valor in combat. He remains active with many veterans organizations, serving on the board of the Headstrong Project, which provides cost- and stigma-free mental health care to veterans. And he is a professor in UC San Diego&#8217;s political science department.</p></div>
+<div><p>Fletcher is an Ironman Triathlete and avid outdoorsman who enjoys surfing and alpine mountaineering/glacier climbing. He lives with his wife, Assemblywoman Lorena Gonzalez Fletcher, and their four children in City Heights.<br>
+<br>
+<strong>Why are you running? </strong><br>
+<br>
+In these times, we need leaders at the County who will stand up to <runtime:topic id="PEBSL000163">Trump</runtime:topic>&#8217;s hateful agenda and fight to protect immigrants, women&#8217;s rights and our environment here in San Diego. There&#8217;s so much at stake for San Diego.</p></div>
+<div><p>Right now, all our County supervisors are <runtime:topic id="ORGOV0000004">Republicans</runtime:topic>, and none are standing up for us. In fact, our supervisors are siding with Trump, recently joining the Trump Administration lawsuit against California&#8217;s protections for immigrants, and pushing his harmful agenda.</p></div>
+<div><p>I&#8217;ll bring change and stand up for our values. I&#8217;ll work to protect immigrants and refugees because diversity makes San Diego stronger and every human being should be treated with dignity and respect. I&#8217;ll fight to provide quality, affordable health care to all San Diegans, especially children and seniors. And I&#8217;ll never back down from defending our clean air and water laws to ensure safe, healthy neighborhoods and beautiful, clean beaches for all.</p></div>
+<div><p>And I&#8217;ve written a comprehensive homeless plan so we can start really tackling the homeless crisis affecting so many San Diego communities. My plan dedicates available, but unspent funds, to get the homeless off the streets and into the treatment and housing they need with stable shelters, investments in affordable housing and stepped up public health resources. And I&#8217;ll require audits of all ongoing County homeless programs so taxpayers know how their money is spent and what&#8217;s actually working.</p></div>
+<div><p>I&#8217;ll never back down from standing up for our values and fighting to build a better County government for all of San Diego.<br>
+<br>
+<strong>What are the three most important issues to you?</strong><br>
+<br>
+1) Standing up to the Trump agenda needs to be priority number one. As attacks on immigrants and threatens to our environment continue, we need a County Government that will stand up against Trump and fight to defend our values here at home.</p></div>
+<div><p>2) Tackling the homeless crisis through increased mental health services, stable shelters and audits so we know what&#8217;s working.</p></div>
+<div><p>3) Expanding job training, vocational education, and tuition-free community college to expand economic opportunity for students and workers throughout San Diego.<br>
+<br>
+<strong>What will you do to alleviate deadlock and change the way the political system currently works?</strong><br>
+<br>
+What Donald Trump doesn&#8217;t get is that real leaders attack problems, not people. I&#8217;ve spent my whole career listening to the public and bringing people together behind real solutions to the challenges we face.</p></div>
+<div><p>That&#8217;s how I passed Chelsea&#8217;s Law with overwhelming bipartisan support and how we delivered on the Homeowners Bill of Rights to protect homeowners from predatory lending. And I helped lead the charge on so much more. When I served in the Assembly, I was rated one of California&#8217;s most effective legislators, bringing Republicans and Democrats together to pass over 30 laws to protect the environment, improve our roads and deliver needed funding to the San Diego.</p></div>
+<div><p>Since serving in the legislature, I&#8217;ve remained active fighting for what I believe in and getting things done. I founded a veterans foundation to help our returning heroes get the services and support they need.</p></div>
+<div><p>I&#8217;m more ready than ever to put my proven experience to work delivering real results to build a brighter future for all of San Diego.</p></div>
+<div><p><strong>Ken Malbrough, Democrat</strong></p></div>
+<figure class="medium left">
+  <img src="http://www.trbimg.com/img-5aff2fcf/turbine/sd-1526673355-0ckt6pwm7v-snap-image" alt="Ken Marlbrough" title="Ken Marlbrough">
+  <figcaption>
+    Ken Marlbrough <span class="credits">COURTESY</span>
+  </figcaption>
+</figure>
+<div><p>Malbrough is a proud native San Diegan who graduated from San Diego High School and Miramar College.</p></div>
+<div><p>A retired deputy fire chief from the <runtime:topic id="ORGOVV00031">City of San Diego</runtime:topic> Fire-Rescue Department, Marlbrough retired in 2012 with 31 years of experience. He is an active community leader and advocate, serving as district delegate for the 79th State Assembly District, co-chair for the City&#8217;s consolidated pan advisory board, and chair of the Encanto Neighborhoods Community Planning Group and of the O&#8217;Farrell-Valencia Park Town Council.</p></div>
+<div><p>Marlbrough, 63, has lived in Southeast San Diego all his life. He has been married to 40 years to his high-school sweetheart Deborah. They have two children, Derrick Malbrough (38), Kendra Malbrough (34), and a granddaughter, Arianna.</p></div>
+<div><p><strong>Why are you running?</strong><br>
+<br>
+The County has many ongoing and future challenges the board of supervisors must address immediately. However, better access to health and human services is a life-and-death issue that led me to run for county supervisor.<br>
+<br>
+As a native San Diegan and a first-responder for 31 years, I have professionally and personally engaged with struggling residents who could have benefited from access to our county health and human services. The hard-working County employees are doing an amazing job. My goal is to support their efforts and provide them with increased staffing, training and improved outreach to the public. The County must take the lead in direct and preventative health and human services to ensure San Diegans are never again victims of deadly outbreaks.</p></div>
+<div><p><strong>What are the three most important issues to you?</strong></p></div>
+<div><p>1) To ensure that all citizens living within the County are aware and have access to our Health and Human Services programs.<br>
+<br>
+2) To lead the way in reducing our homelessness epidemic and addressing this issue region wide.<br>
+<br>
+3) To expand the availability of affordable housing and workforce housing opportunities for the low-income, middle-income, homeless and disabled people, as well as seniors and veterans.</p></div>
+<div><p><strong>What will you do to alleviate deadlock and change the way the political system currently works?</strong></p></div>
+<div><p>My many years as deputy fire chief gives me the experience and leadership to lead a county that is directly accountable and responsible to its residents. As a supervisor, I will be hands on and proactively engaged with my fellow supervisors and staff to become more efficient and effective. My staff and I will also work directly with county agencies and local government to foster greater cooperation and improved transparency.</p></div>
+<div><p><strong>Omar Passons, Democrat</strong></p></div>
+<figure class="medium right">
+  <img src="http://www.trbimg.com/img-5aff2ef1/turbine/sd-1526673133-t7z9e37eq7-snap-image" alt="Omar Passons" title="Omar Passons">
+  <figcaption>
+    Omar Passons <span class="credits">Paul M Bowers/COURTESY</span>
+  </figcaption>
+</figure>
+<div><p>Passons is a native San Diegan, a land use and construction attorney, and a byproduct of San Diego County&#8217;s foster-care system. A past president of the Earl B. Gilliam Bar Association, Passons spent most of his 13-year legal career in the private sector, except for a three-year portion as a litigator for Caltrans.</p></div>
+<div><p>Prior to his legal career, Passons earned a Master&#8217;s Degree in public health and worked for four years evaluating the success and effectiveness of government-funded health and social service programs for the U.S. Department of Health and Human Services in Washington.</p></div>
+<div><p>Since moving home to San Diego in 2004, Passons has dedicated his life to improving economic opportunities for all San Diegans and to helping youth. He has served on the boards of Voices for Children, <runtime:topic id="ORNPR000045">United Way</runtime:topic> and the San Diego Workforce Partnership, all of which included roles focused on supporting San Diego&#8217;s children and families.</p></div>
+<div><p>With over 100 foster brothers and sisters of all backgrounds during his life, Passons realizes that, as people, we have a lot in common.</p></div>
+<div><p>Passons, 42, lives with his wife, a small business owner, in their home in the Morley Field section of North Park.</p></div>
+<div><p><strong>Why are you running?</strong><br>
+<br>
+I know firsthand that strong early support in a young person&#8217;s life has a huge impact on lifetime success and I want that opportunity for every child. I also feel strongly that we have a crisis in our senior community brought on by changing demographics and unsustainable housing costs that we must address.<br>
+<br>
+As a non-career politician with private sector experience and a background in public health, my personal and professional experience gives me a lens important to providing long-term, strategic leadership to our County&#8217;s major issues.<br>
+<br>
+<strong>What are the three most important issues to you?</strong><br>
+<br>
+1) We must address the dual aim of ensuring every child has the opportunity for a strong start and that our seniors can age with dignity and security.</p></div>
+<div><p>2) We must tackle our homeless and housing crises with regional leadership and long-term thinking.</p></div>
+<div><p>3) We must protect and enhance our environment to address the critical nature of climate change while still enabling our economy to grow and flourish in an inclusive way for all San Diegans.<br>
+<br>
+<strong>What will you do to alleviate deadlock and change the way the political system currently works?</strong><br>
+<br>
+In my view, the County government&#8217;s problem isn&#8217;t gridlock, it is a fundamental need to shift towards a more progressive approach that recognizes that economic prosperity and social welfare are complementary and the government has a role in both. I bring a fresh perspective, rather than a career political mindset to our government and will push for more long-term thinking, more prevention, and more systems driven approaches to resolving our major issues as a region.</p></div>
+<div><p><strong>Lori Salda&#241;a, Democrat</strong></p></div>
+<figure class="medium left">
+  <img src="http://www.trbimg.com/img-5aff3019/turbine/sd-1526673428-vtemtw2jv8-snap-image" alt="Lori Saldaña" title="Lori Saldaña">
+  <figcaption>
+    Lori Saldaña <span class="credits">COURTESY</span>
+  </figcaption>
+</figure>
+<div><p>Salda&#241;a, a progressive, is a native San Diegan who spent her life in the district. She was born at Scripps Hospital when it was in The Village, and grew up with four sisters in a career Marine Corps family.</p></div>
+<div><p>She has taught at SDSU, was an Environmental Policy Research Fellow at UCSD&#8217;s Center for US/Mexico Studies, and has served as a business information technology professor, associate dean and workforce-development grant manager for the San Diego Community College District.<br>
+<br>
+As a volunteer at SDSU, Salda&#241;a joined with others to clean up Famosa Slough; the state then purchased the land for public use. She continued protecting San Diego&#8217;s environment by leading the Sierra Club and co-founding San Diego&#8217;s Earth Fair in Balboa Park.Salda&#241;a won a grassroots campaign for Assembly and served from 2004 to 2010 in the legislature, authoring and co-authoring landmark environmental legislation, supporting veterans and military families, providing funds for family planning and women&#8217;s health care, affordable housing, and education.In 2010, Salda&#241;a wrote the law that led to the elimination of the open carry of handguns in California.<br>
+<br>
+In 2016, she introduced the fight for testing San Diego&#8217;s backlog of thousands of sexual-assault evidence kits. She is an avid organic home gardener, planting butterfly gardens to provide habitat for endangered species.<br>
+<br>
+<strong>Why are you running?</strong><br>
+<br>
+To provide a thoughtful, research-driven, prevention-oriented and cost-effective approach to our County government that is focused on avoiding crises similar to the ones we are currently facing: housing insecurity, food insecurity, and deaths and illness that result when people lack safe housing and nutritious food.</p></div>
+<div><p>Also, to have a 21st-century approach to developing a legal cannabis industry in our region, by supporting cultivation, retail sales, medical research at UCSD and collaboration in the biotech industry.</p></div>
+<div><p>Finally, to establish an effective Climate Action Plan, and develop a clean, cost-effective Community Choice energy program that will protect our environment, address climate change, and save San Diego consumers money on their utility bills.</p></div>
+<div><p><strong>What are the three most important issues to you?</strong></p></div>
+<div><p>1) Providing adequate housing, nutrition, and supportive services to our most vulnerable communities &#8212; low-income working families and older adults on fixed incomes &#8212; to prevent additional illnesses and deaths.2) Establishing an office of Cannabis Education, Research and Economic Development to support the growth of the legal cannabis industry throughout San Diego County and generate revenues to help pay for law enforcement and other county services and programs.3) Creating an effective, legally enforceable Climate Action Plan and Community Choice Energy program, to reduce greenhouse gas emissions, protect our environment, and save consumers money on their monthly utility bills.</p></div>
+<div><p><strong>What will you do to alleviate deadlock and change the way the political system currently works?</strong></p></div>
+<div><p>The best cure for gridlock is sunshine: transparency creates accountability. Transforming County government will require the full participation of community members to ensure elected officials provide supportive housing, healthcare and human services as intended. I will invite people to participate in community meetings and public hearings to chart a new course of action, and if necessary, ask the state to investigate the problems we face, to help identify systemic changes that are needed to make San Diego safer and healthier for everyone.<br>
+<br>
+<strong>Who can vote:</strong><br>
+Anyone who is 1) a California resident; 2) a U.S. citizen; 3) 18 years or older on Election Day; 4) not currently in prison or on parole for a felony conviction; and 5) not found mentally incompetent by a court of law.</p></div>
+<div><p><strong>How to register:</strong><br>
+Online: registertovote.ca.gov/By mail: Send a copy of the National Mail Voter Registration Form to Secretary of State Elections Division, 1500 11th St., Sacramento, CA 95814. (Either download one from www.eac.gov/voters; pick one up at any DMV, county elections office, San Diego Library branch or U.S. Post Office; or request one by calling 800-345-8683.)</p></div>
+<div><p><strong>What you&#8217;ll need:</strong><br>
+Your California driver license or ID card number, or the last four digits of your social security number, and your date of birth.</p></div>
+<div><p><strong>Registration deadline:</strong><br>
+All forms must be submitted or received by 11:59 p.m. Monday, May 21. (If you recently registered online, please wait at least 24 hours before checking your registration status.)</p></div>
+<div><p><strong>Check your registration status:</strong><br>
+www.voterstatus.sos.ca.gov/</p></div>
+<div><p><strong>Find your polling place:</strong><br>
+www2.sdcounty.ca.gov/rov/Eng/Polling.asp</p></div>
+<div><p><strong>Vote-by-mail (formerly absentee) ballot:</strong><br>
+You can be mailed a ballot featuring every choice you&#8217;d have at a polling place, as well as instructions on how to mark and return it. To request one, contact Michael Vu, Registrar of Voters, P.O. Box 85656, San Diego, CA 92186-5656, call (858) 565-5800 or e-mail: rovmail@sdcounty.</p></div>
+  </div>
+</div>
+
+<script>
+	/* Render tweets */
+	var render_tweets = function () {
+    window.twttr.ready(function(twttr) {
+      $('*[data-tweet-id]').each(function() {
+      	var formID = $(this).closest('figure')[0];
+        var _tweet = $(this);
+        var options = {
+          conversation: 'none',
+          cards: 'hidden'
+        };
+        if( $(this).hasClass('conversation') ) {
+          options['conversation'] = 'all';
+        }
+        if( $(this).hasClass('card') ) {
+          options['cards'] = 'visible';
+        }
+        var tweet_id = $(this).data('tweet-id');
+  		  $(this).text("");
+  			if (tweet_id){
+  				twttr.widgets.createTweet( tweet_id, formID, {
+				    conversation: options['conversation'],
+				    cards: options['cards'],
+				    align: 'center'
+				  }).then(function(el) {
+            $(t
+iframe').height($('iframe').contents('body').outerHeight());
+          });
+        };
+      });
+    });
+  };
+  render_tweets();
+
+  /* Render instagram */
+	$( '.raw-insta' ).each(function( index ){
+	  var rawInsta = $( this ).text();
+	  var $thisFigure = $( this );
+	  $.ajax({
+	    dataType: "jsonp",
+	    url: "https://api.instagram.com/oembed/?url=http://instagr.am/p/" + rawInsta
+	  }).done(function(data){
+	    $thisFigure.html( data.html );
+	  }).success(function(data){
+      window.instgrm.Embeds.process();
+	  });
+	  $( this ).removeClass( 'raw-insta' ).text("");
+	});
+
+	/* Render brightcove */
+	$( '.raw-brightcove' ).each(function( index ){
+	  var rawBright = $( this ).text().trim();
+	  var $thisFigure = $( this );
+	  $( this ).removeClass( 'raw-brightcove' ).text("");
+	  $thisFigure.html("<object id='myExperience177068876' class='BrightcoveExperience'><param name='bgcolor' value='#FFFFFF' /><param name='wmode' value='transparent' /><param name='autoStart' value='false' /><param name='sectionName' value ='/' /><param name='contentItemType' value ='embed' /><param name='omnitureServer' value='' /><param name='omnitureAcct' value='' /><param name='width' value='500' /><param name='height' value='300' /><param name='playerID' value='3688749016001' /><param name='playerKey' value='AQ~~,AAADW0fLrjE~,LYy0aySaVACe66ugiBR5AtAO4ZZLpa-J' /><param name='adServerURL' value='' /><param name='additionalAdTargetingParams' value='' /><param name='externalAds' value='true' /><param name='linkBaseURL' value='http://www.latimes.com/videogallery/'" + rawBright + " /><param name='isVid' value='true' /><param name='isUI' value='true' /><param name='dynamicStreaming' value='true' /><param name='showNoContentMessage' value='true' /><param name='secureConnections' value='true' /><param name='secureHTMLConnections' value='true' /><param name='@videoPlayer' value='ref:" + rawBright + "' /></object>");
+	});
+	brightcove.createExperiences();
+
+  /* Render Facebook */
+  $('div.fb-post').each(function() {
+    $(this).html('');
+    $(this).removeAttr('fb-xfbml-state');
+    $(this).removeAttr('fb-iframe-plugin-query');
+    $(this).attr('data-width', $(this).parent().width()-10);
+  });
+
+  /* Make Facebook Responsive */
+  $( window ).resize(function() {
+    if($('div.fb-post').length != 0) {
+		$('div.fb-post').each(function() {
+			$(this).html('');
+			$(this).removeAttr('fb-xfbml-state');
+			$(this).removeAttr('fb-iframe-plugin-query');
+			$(this).attr('data-width', $(this).parent().width()-10);
+		});
+		if (typeof FB !== 'undefined'){
+		 	FB.XFBML.parse();
+		}
+    }
+  });
+
+	/* Remove all elements */
+</script>
+
+<!-- CSS to make sure our builds work in Arc until we have a new template system -->
+<style>
+
+  .pb-f-article-body #story .heroic {
+    display: none;
+  }
+
+  .pb-f-article-body #story div p, .pb-f-article-body #story div h2, .pb-f-article-body #story div h3, .pb-f-article-body #story div ul, .pb-f-article-body #story div ol {
+    max-width: 792px;
+    margin: 18px auto;
+  }
+
+  .pb-f-article-body #story div h2, .pb-f-article-body #story div h3 {
+    margin: 40px auto 25px auto;
+  }
+
+  .pb-f-article-body #story .benton-title, .pb-f-article-body #story h2.question, .pb-f-article-body #story h3.question {
+    font-family: 'Benton Gothic Bold';
+    line-height: inherit;
+  }
+
+  .pb-f-article-body #story .date-title {
+    font-family: 'Benton Gothic Regular';
+    margin: 60px auto -20px auto;
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+
+</style>
+<!-- End Arc-fix CSS -->
+
+	
